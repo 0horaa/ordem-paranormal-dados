@@ -19,7 +19,7 @@
 
 <hr>
 <h2>Teste a aplicação instalando-a na sua máquina</h2>
-<p>Para utilizar essa aplicação diretamente na sua máquina caso queira, é extremamente fácil. Você pode simplesmente clonar esse repositório e clicar duas vezes no arquivo "index.html", abrindo-o no navegador de sua preferência, ou mesmo acessar o site e clicar <a href="http://odpdados.rf.gd/config/odpdados.zip">nesse link</a> pra realizar o download do site, extrair o arquivo .zip e fazer o mesmo processo de rodar o arquivo "index.html".</p>
+<p>Para utilizar essa aplicação diretamente na sua máquina caso queira, é extremamente fácil. Você pode simplesmente clonar esse repositório e clicar duas vezes no arquivo "index.html", abrindo-o no navegador de sua preferência, ou mesmo acessar o site e clicar no link de download, extrair o arquivo .zip e fazer o mesmo processo de rodar o arquivo "index.html".</p>
 
 <hr>
 <h2>🛠 Tecnologias</h2>
