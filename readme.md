@@ -12,6 +12,7 @@
 - [x] Rolagem de dados comuns de qualquer sistema de RPG, como D3, D4, D8, D100, etc.
 - [x] Sistema de histórico pra vizualização de todos os dados rolados
 - [x] Responsividade completa pra dispositivos mobile, dando a possibilidade de usar tanto em desktops, como em celulares/tablets
+- [] Suporte a valores de habilidade maiores do que 20
 
 <hr>
 <h2 align="center">Teste a aplicação na web</h2>
