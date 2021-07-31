@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Suez One', serif;
+    outline:none;
+}
+body{
+    background:#000;
+}
+.top{
+    text-align:center;
+    margin-top:1%;
+}
+.top img{
+    height:120px;
+    width:120px;
+}
+.top h2{
+    color:#fff;
+    font-weight:lighter;
+}
+.title{
+    margin-top:6%;
+    margin-right:5%;
+    margin-left:5%;
+    border:0.2px solid #fff;
+    border-radius:2px 2px 0 0;
+}
+.title h2{
+    color:#fff;
+    font-weight:100;
+    font-size:140%;
+    text-align:center;
+}
+.titleDothers{margin-top:10%;}
+form{
+    display:flex;
+    flex-direction:column;
+    margin-left:5%;
+    margin-right:5%;
+    border:0.2px solid #fff;
+    border-radius:0 0 2px 2px;
+}
+form label{
+    color:#fff;
+    margin-top:4%;
+    margin-left:5%;
+    font-size:120%;
+}
+form input, form select{
+    padding:1.5% 0;
+    margin-top:4%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:4%;
+    font-size:115%;
+    background:#000;
+    border:0.2px solid #fff;
+    color:#fff;
+    transition:borderColor 0.3s ease-in-out;
+}
+form button{   
+    padding:1%;
+    margin:0 5%;
+    color:#000;
+    font-size:120%;
+    border:0.2px solid #fff;
+    cursor:pointer;
+    background:#fff;
+    transition:opacity 0.3s ease-in-out;
+}
+form button:hover{
+    opacity:0.6;
+}
+form button:focus{
+    border:1px solid #ff0000;
+}
+form p.error{
+    margin-left:5%;
+    color:#ff0000;
+    margin-bottom:4%;
+    font-size:110%;
+    display:none;
+}
+form input.result{
+    text-align:center;
+    font-size:150%;
+}
+.table{
+    margin-top:10%;
+}
+table{
+    color:#fff;
+    border-spacing:0;
+    border-right:0.2px solid #fff;
+    border-bottom:0.2px solid #fff;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+    font-size:130%;
+    text-align:center;
+    border-radius:0 0 2px 2px;
+}
+table td{
+    border-left:0.2px solid #fff;
+    border-top:0.2px solid #fff;
+    padding:0 0.2%;
+}
+
+.link{
+    text-align:center;
+    margin-top:5%;
+}
+.link a{
+    color:#fff;
+}
+@media screen and (min-width:768px){
+    .title{
+        width:85%;
+    }
+    .title h2{
+        font-size:150%;
+    }
+    form{
+        width:85%;
+    }
+    form label{
+        margin-top:2%;
+        font-size:135%;
+    }
+    form input,form select{
+        margin-top:2%;
+        margin-bottom:2%;
+        padding:1% 0;
+        font-size:130%;
+    }
+    form p.error{
+        margin-bottom:2%;
+    }
+    .titleDothers{
+        margin-top:3%;
+    }
+    .forms{
+        width:45%;
+        margin-top:-1%;
+    }
+    .table{
+        width:50%;
+        margin-top:-1%;
+    }
+    .titleTable{
+        width:100%;
+    }
+    table{
+        width:100%;
+        margin-left:5%;
+    }
+    .link{
+        margin-top:1%;
+    }
+    .main{
+        display:flex;
+        align-content:center;
+    }
+}
