@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">Ordem Paranormal - Sistema de Dados</h1>
-<p align="center">Uma aplicação de rolagem de dados de jogos de RPG de mesa, baseado nas especificidades do sistema criado por <a href="https://twitter.com/cellbit">Rafael Lange (Cellbit)</a> pra sua própria campanha de RPG <a href="https://www.youtube.com/watch?v=SsUWqdWO7OM">Ordem Paranormal</a>. Também ontêm funções pra rolar dados comuns e vizualizá-los num histórico.</p>
+<p align="center">Uma aplicação de rolagem de dados de jogos de RPG de mesa, baseado nas especificidades do sistema criado por <a href="https://twitter.com/cellbit">Rafael Lange (Cellbit)</a> pra sua própria campanha de RPG <a href="https://www.youtube.com/watch?v=SsUWqdWO7OM">Ordem Paranormal</a>. Também contêm funções pra rolar dados comuns e visualizá-los num histórico.</p>
 <h4>Projeto base finalizado 🚀</h4>
 <hr>
 <h3>Funcionalidades</h3>
