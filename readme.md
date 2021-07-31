@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">Ordem Paranormal - Sistema de Dados</h1>
-<p align="center">Uma aplicação de rolagem de dados de jogos de RPG de mesa, baseado nas especificidades do sistema criado por <a href="https://twitter.com/cellbit">Rafael Lange (Cellbit)</a> pra sua própria campanha de RPG <a href="https://www.youtube.com/watch?v=SsUWqdWO7OM">Ordem Paranormal</a>. Também contêm funções pra rolar dados comuns e visualizá-los num histórico.</p>
+<p align="center">Uma aplicação de rolagem de dados de jogos de RPG de mesa, baseado nas especificidades do sistema criado por <a href="https://twitter.com/cellbit" target="_blank">Rafael Lange (Cellbit)</a> pra sua própria campanha de RPG <a href="https://www.youtube.com/watch?v=SsUWqdWO7OM">Ordem Paranormal</a>. Também contêm funções pra rolar dados comuns e visualizá-los num histórico.</p>
 <h4>Projeto base finalizado 🚀</h4>
 <hr>
 <h3>Funcionalidades</h3>
@@ -29,7 +29,7 @@ As ferramentas utilizadas para o desenvolvimento da aplicação foram:
 - HTML
 - CSS
 - Javascript
-- <a href="https://fonts.google.com/">Google Fonts</a>
+- <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
 
 ### Autor
 ---
@@ -40,8 +40,8 @@ As ferramentas utilizadas para o desenvolvimento da aplicação foram:
  <sub><b>Sérgio Gabriel</b></sub></a> 🚀
 
 
-<a href="https://twitter.com/0hora_"><h4>Twitter</h4></a>
-<a href="https://www.instagram.com/sergio_gbrl/">Instagram</a>
+<a href="https://twitter.com/0hora_" target="_blank"><h4>Twitter</h4></a>
+<a href="https://www.instagram.com/sergio_gbrl/" target="_blank">Instagram</a>
 
 <hr> 
 MIT License
