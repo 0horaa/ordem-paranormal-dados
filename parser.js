@@ -12,7 +12,7 @@ export function parseDiceExpresion(input) {
     
     const rolledDices = parsedDices.map((dice) => {
         const values = new Array(dice.times).fill(0).map(() => Math.floor(Math.random() * dice.sides + 1));
-        console.log(values);
+
         return {
             values,
             total: values.reduce((previous, current) => previous + current, 0),
