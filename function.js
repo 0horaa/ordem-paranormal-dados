@@ -1,6 +1,8 @@
+import { parseDiceExpresion } from "./parser.js";
+
 document.getElementById("button").addEventListener("click",calcd20);
 document.getElementById("dbutton").addEventListener("click",dOthers);
-countingTable = 0;
+let countingTable = 0;
 
 function calcd20(){
     var number = Number(document.getElementById("number").value);
@@ -281,50 +283,14 @@ function colorInput(inputSelected){
     );
 }
 
-function dOthers(){
-    function calcdOthers(dValue){
-        var dRandom = Math.floor(Math.random() * dValue + 1);
-        document.getElementById("dresult").value = dRandom;
-        table = document.getElementById("table");
-        addTable(dRandom);
-    }
-    function calcd2Others(dValue1,dValue2){
-        let dRandom1 = Math.floor(Math.random() * dValue1 + 1);
-        let dRandom2 = Math.floor(Math.random() * dValue2 + 1);
-        document.getElementById("dresult").value = Number(dRandom1 + dRandom2);
-        addTable(Number(dRandom1 + dRandom2));
-    }
-    var option = document.getElementsByTagName("option");
-    if(option[0].selected){
-        calcdOthers(2);
-    }else if(option[1].selected){
-        calcdOthers(3);
-    }else if(option[2].selected){
-        calcdOthers(4);
-    }else if(option[3].selected){
-        calcdOthers(5);
-    }else if(option[4].selected){
-        calcdOthers(6);
-    }else if(option[5].selected){
-        calcdOthers(8);
-    }else if(option[6].selected){
-        calcdOthers(10);
-    }else if(option[7].selected){
-        calcdOthers(12);
-    }else if(option[8].selected){
-        calcdOthers(20);
-    }else if(option[9].selected){
-        calcdOthers(100);
-    }else if(option[10].selected){
-        calcd2Others(4,4);
-    }else if(option[11].selected){
-        calcd2Others(6,6);
-    }else if(option[12].selected){
-        calcd2Others(8,8);
-    }else if(option[13].selected){
-        calcd2Others(10,10);
-    }else if(option[14].selected){
-        calcd2Others(3,4);
-    }
-    colorInput(document.getElementById("dresult"));
+function dOthers() {
+    const select = document.getElementById("complimentary-dice-select");
+    const results = parseDiceExpresion(select.value);
+
+    const total = results.reduce((prev, curr) => prev + curr.total, 0);
+
+    addTable(total);
+    const resultInput = document.getElementById("dresult");
+    resultInput.value = total;
+    colorInput(resultInput);
 }
