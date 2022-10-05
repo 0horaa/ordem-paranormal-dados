@@ -4,13 +4,15 @@
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="content-language" content="pt-br">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="description" content="Role dados de diferentes tipos, como D3,D10,D20 e outros, e identifique seu tipo de sucesso baseado no sistema de RPG adaptado por Rafael Lange(Cellbit)."> 
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="Role dados de diferentes tipos, como D3,D10,D20 e outros, e identifique seu tipo de sucesso baseado no sistema de RPG adaptado por Rafael Lange(Cellbit).">
     <meta name="keywords" content="ordem paranormal, rpg, dados, d20, desconjuração">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="config/logo-ordem-branca-icon.png" type="image/x-icon">
@@ -19,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <title>Sorteios de Dados</title>
 </head>
+
 <body>
     <div class="top">
         <img src="config/logo-ordem-branca.png" alt="Logo da Ordo Realitas" title="Logo da Ordu Realitas">
@@ -26,41 +29,49 @@
     </div>
     <section class="main">
         <section class="forms">
-            <div class="title"><h2>ROLAR D20</h2></div>
+            <div class="title">
+                <h2>ROLAR D20</h2>
+            </div>
             <form>
                 <label for="number">Valor da Habilidade:</label>
-                <input type="number" name="number" id="number" min="1" max="20" placeholder="Digite aqui o n° da sua perícia">
+                <input type="number" name="number" id="number" min="1" max="20"
+                    placeholder="Digite aqui o n° da sua perícia">
                 <p id="error" class="error">Digite apenas valores de 1 a 20</p>
                 <button type="button" name="button" id="button">Rolar</button>
-                <input type="text" name="result" class="result" id="result" disabled="" placeholder="Seu resultado..."> 
+                <input type="text" name="result" class="result" id="result" disabled="" placeholder="Seu resultado...">
             </form>
-            <div class="title titleDothers"><h2 style="font-size:100%;">OUTROS DADOS(D3,D6,ETC.)</h2></div>
+            <div class="title titleDothers">
+                <h2 style="font-size:100%;">OUTROS DADOS(D3,D6,ETC.)</h2>
+            </div>
             <form>
-                <label for="select">Dados Complementares:</label>
-                <select name="d#" id="select">
-                    <option>D2</option>
-                    <option value="0">D3</option>
-                    <option>D4</option>
-                    <option>D5</option>
-                    <option>D6</option>
-                    <option>D8</option>
-                    <option>D10</option>
-                    <option>D12</option>
-                    <option>D20</option>
-                    <option>D100</option>
-                    <option>2 D4</option>
-                    <option>2 D6</option>
-                    <option>2 D8</option>
-                    <option>2 D10</option>
-                    <option>D3 + D4</option>
+                <label for="complimentary-dice-select">Dados Complementares:</label>
+                <select name="d#" id="complimentary-dice-select">
+                    <option value="1d2">1D2</option>
+                    <option value="1d3">1D3</option>
+                    <option value="1d4">1D4</option>
+                    <option value="1d5">1D5</option>
+                    <option value="1d6">1D6</option>
+                    <option value="1d8">1D8</option>
+                    <option value="1d10">1D10</option>
+                    <option value="1d12">1D12</option>
+                    <option value="1d20">1D20</option>
+                    <option value="1d100">1D100</option>
+                    <option value="2d4">2D4</option>
+                    <option value="2d6">2D6</option>
+                    <option value="2d8">2D8</option>
+                    <option value="2d10">2D10</option>
+                    <option value="1d3+1d4">1D3+1D4</option>
                 </select>
                 <button type="button" name="dbutton" id="dbutton">Rolar</button>
-                <input type="text" name="dresult" class="result" id="dresult" disabled="" placeholder="Seu resultado..."> 
+                <input type="text" name="dresult" class="result" id="dresult" disabled=""
+                    placeholder="Seu resultado...">
             </form>
         </section>
 
         <section class="table">
-            <div class="title titleTable" style="border-bottom:none;"><h2>HISTÓRICO</h2></div>
+            <div class="title titleTable" style="border-bottom:none;">
+                <h2>HISTÓRICO</h2>
+            </div>
             <table id="table">
                 <tr id="trFirst">
                     <td>#</td>
@@ -69,8 +80,11 @@
             </table>
         </section>
     </section>
-    <p class="link" style="margin-top:7%;"><a href="config/odpdados.zip" download="Basta clicar 2 vezes no index para rodar." style="font-size:70%">Caso o site esteja lento ou com problemas, você pode fazer o download do site por aqui. Basta rodar o arquivo com nome "index"</p>
+    <p class="link" style="margin-top:7%;"><a href="config/odpdados.zip"
+            download="Basta clicar 2 vezes no index para rodar." style="font-size:70%">Caso o site esteja lento ou com
+            problemas, você pode fazer o download do site por aqui. Basta rodar o arquivo com nome "index"</p>
     <p class="link"><a href="https://twitter.com/0hora_" target="_blank">Twitter do criador</a></p>
-    <script src="function.js"></script>
+    <script src="/function.js" type="module"></script>
 </body>
+
 </html>
