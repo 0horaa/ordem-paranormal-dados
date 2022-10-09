@@ -11,7 +11,7 @@ export function parseDiceExpresion(input) {
     });
     
     const rolledDices = parsedDices.map((dice) => {
-        const values = new Array(dice.times).fill(0).map(() => Math.floor(Math.random() * dice.sides + 1));
+        const values = Array.from({ length: dice.times }, () => Math.floor(Math.random() * dice.sides + 1));
 
         return {
             values,
