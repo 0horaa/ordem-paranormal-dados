@@ -267,16 +267,16 @@ function addTable(dices, results, total){
     const row = document.createElement('tr');
 
     const idCol = document.createElement('td');
-    idCol.innerHTML = `${++countingTable}`;
+    idCol.innerHTML = ++countingTable;
 
     const expressionCol = document.createElement('td');
-    expressionCol.innerHTML = `${dices}`;
+    expressionCol.innerHTML = dices;
 
     const resultsCol = document.createElement('td');
-    resultsCol.innerHTML = `${results}`;
+    resultsCol.innerHTML = results;
 
     const totalCol = document.createElement('td');
-    totalCol.innerHTML = `${total}`;
+    totalCol.innerHTML = total;
 
     row.append(idCol, expressionCol, resultsCol, totalCol);
 
