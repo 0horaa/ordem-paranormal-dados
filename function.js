@@ -301,7 +301,7 @@ function dOthers() {
 
     addTable(
         select.value,
-        results.reduce((prev, curr) => prev ? `${prev}, [${curr.values.toString()}]` : `[${curr.values.toString()}]`, ''),
+        results.reduce((prev, curr) => prev ? `${prev}, (${curr.values.toString()})` : `(${curr.values.toString()})`, ''),
         total
     );
     const resultInput = document.getElementById("dresult");
