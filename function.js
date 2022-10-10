@@ -263,13 +263,24 @@ function calcd20(){
     }
 }
 
-function addTable(randomic){
-    var tr = document.createElement("tr");
-    var td = document.createElement("td");
-    var td2 = document.createElement("td");
-    td.textContent = ++countingTable;
-    td2.textContent = randomic;
-    table.append(tr,td,td2);
+function addTable(dices, results, total){
+    const row = document.createElement('tr');
+
+    const idCol = document.createElement('td');
+    idCol.innerHTML = ++countingTable;
+
+    const expressionCol = document.createElement('td');
+    expressionCol.innerHTML = dices;
+
+    const resultsCol = document.createElement('td');
+    resultsCol.innerHTML = results;
+
+    const totalCol = document.createElement('td');
+    totalCol.innerHTML = total;
+
+    row.append(idCol, expressionCol, resultsCol, totalCol);
+
+    table.querySelector('tbody').append(row);
 }
 
 
@@ -286,10 +297,13 @@ function colorInput(inputSelected){
 function dOthers() {
     const select = document.getElementById("complimentary-dice-select");
     const results = parseDiceExpresion(select.value);
-
     const total = results.reduce((prev, curr) => prev + curr.total, 0);
 
-    addTable(total);
+    addTable(
+        select.value,
+        results.reduce((prev, curr) => prev ? `${prev}, (${curr.values.toString()})` : `(${curr.values.toString()})`, ''),
+        total
+    );
     const resultInput = document.getElementById("dresult");
     resultInput.value = total;
     colorInput(resultInput);
